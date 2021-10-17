@@ -1,0 +1,58 @@
+
+body{
+    text-transform:capitalize;
+}
+*
+{
+    box-sizing:border-box;
+}
+.menu
+{
+    float:left;
+    width:20%;
+
+}
+.menuitem
+{
+    padding:18px;
+    margin-top:7px;
+    border-bottom : 1px solid #463030;
+    cursor:pointer;
+    font-weight:bold;
+    
+    
+}
+.main
+{
+    
+    float:left;
+    width:60%;
+    padding:0 20px;
+    overflow:auto;
+
+}
+.right
+{
+    float:right;
+    width:20%;
+    padding:30px 25px;
+    margin-top:27px;
+    background-color:cadetblue;
+
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+    @media only screen and (max-width:500px) {
+        /* For mobile phones: */
+        .menu, .main, .right {
+          width: 100%;
+        }
+      }
